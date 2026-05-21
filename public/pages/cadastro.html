@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/login&cadastro.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
     <link rel="stylesheet" href="../css/cadastro.css" />
     <link
       rel="shortcut icon"
@@ -20,37 +20,35 @@
     <title>Lendoo | Cadastro</title>
   </head>
   <body>
-    <body>
-      <header class="logo container">
-        <img src="../images/logo-primary.svg" alt="Logo Lendoo" />
-        <h1 class="title">Lendoo</h1>
-      </header>
+    <header class="logo container">
+      <img src="../images/logo-primary.svg" alt="Logo Lendoo" />
+      <h1 class="title">Lendoo</h1>
+    </header>
 
-      <form class="login-container container" action="../pages/dashboard.html">
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input type="text" name="name" id="name" placeholder="Nome" />
-        </div>
+    <form class="login-container container" action="../pages/dashboard.html">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Nome" />
+      </div>
 
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="E-mail" />
-        </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="E-mail" />
+      </div>
 
-        <div class="form-group">
-          <label for="password">Senha</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Senha"
-          />
-        </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Senha"
+        />
+      </div>
 
-        <button type="submit" class="btn-s">Entrar</button>
+      <button type="submit" class="btn-s">Criar conta</button>
 
-        <span>Não tem conta? <a href="./cadastro.html">Cadastre-se</a></span>
-      </form>
-    </body>
+      <span>Já tem conta? <a href="../pages/login.html">Entrar</a></span>
+    </form>
   </body>
 </html>
