@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login&cadastro.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo-primary.svg"
+      type="image/x-icon"
+    />
+    <title>Lendoo | Cadastro</title>
+  </head>
+  <body>
+    <body>
+      <header class="logo container">
+        <img src="../images/logo-primary.svg" alt="Logo Lendoo" />
+        <h1 class="title">Lendoo</h1>
+      </header>
+
+      <form class="login-container container" action="../pages/dashboard.html">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Nome" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+        </div>
+
+        <button type="submit" class="btn-s">Entrar</button>
+
+        <span>Não tem conta? <a href="./cadastro.html">Cadastre-se</a></span>
+      </form>
+    </body>
+  </body>
+</html>
