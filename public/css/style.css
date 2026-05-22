@@ -4,6 +4,7 @@
   --bg-color: #eff3f6;
   --text-color: #000;
   --border-color: #808080;
+  --nav-link--color: #bfbfbf;
   --w: #fff;
 }
 
@@ -11,4 +12,5 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
