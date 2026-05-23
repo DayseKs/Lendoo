@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/livro.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo/logo-primary.svg"
+      type="image/x-icon"
+    />
+    <title>Lendoo | Detalhes do Livro</title>
+  </head>
+  <body>
+    <header class="mobile-header">
+      <button type="button" class="menu-burguer" id="menuBurguer">
+        <img src="../images/icon/menu.svg" />
+      </button>
+
+      <img
+        class="logo"
+        src="../images/logo/logo-secundary.svg"
+        alt="Lendoo logo"
+      />
+    </header>
+
+    <nav class="sidebar">
+      <img
+        class="logo"
+        src="../images/logo/logo-secundary.svg"
+        alt="Lendoo logo"
+      />
+
+      <button type="button" class="close-btn" id="closeBtn">
+        <img src="../images/icon/close.svg" />
+      </button>
+      <ul>
+        <li>
+          <a href="../pages/minha-estante.html"
+            ><img src="../images/icon/estante.svg" alt="" />Minha Estante</a
+          >
+        </li>
+
+        <li>
+          <a href="../pages/lidos.html"
+            ><img src="../images/icon/lidos.svg" alt="" />Lidos</a
+          >
+        </li>
+
+        <li>
+          <a href="../pages/lendo.html"
+            ><img src="../images/icon/lendo.svg" alt="" />Lendo</a
+          >
+        </li>
+
+        <li>
+          <a href="../pages/quero-ler.html"
+            ><img src="../images/icon/quero-ler.svg" alt="" />Quero Ler</a
+          >
+        </li>
+
+        <li>
+          <a href="../pages/perfil.html"
+            ><img src="../images/icon/perfil.svg" alt="" />Perfil</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <button type="button" class="btn-voltar">
+        <img src="../images/icon/arrow.svg" />
+        Voltar
+      </button>
+
+      <div class="content-scroll">
+        <section class="book-details">
+          <img src="" alt="" class="book-cover" />
+
+          <div class="book-info">
+            <h1 class="book-title"></h1>
+            <p class="author"></p>
+
+            <div class="book-meta">
+              <span class="years"></span>
+              <span class="pages"></span>
+            </div>
+
+            <span class="genre"></span>
+
+            <div class="status-selector">
+              <p>Status</p>
+
+              <div class="status-options">
+                <button type="button" class="lido">Lido</button>
+                <button type="button" class="lendo">Lendo</button>
+                <button type="button" class="quero">Quero Ler</button>
+              </div>
+            </div>
+
+            <div class="btns">
+              <button type="button" class="btn-favorito">
+                Adicionar na Minha Estante
+              </button>
+
+              <button type="button" class="btn-remover">
+                Remover da Minha Estante
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="sinopse">
+          <h2>Sinopse</h2>
+
+          <p></p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
