@@ -19,11 +19,30 @@
     <title>Lendoo | Minha Estante</title>
   </head>
   <body>
-    <nav class="sidebar">
-      <img src="../images/logo/logo-secundary.svg" alt="Lendoo logo" />
+    <header class="mobile-header">
+      <button type="button" class="menu-burguer" id="menuBurguer">
+        <img src="../images/icon/menu.svg" />
+      </button>
 
+      <img
+        class="logo"
+        src="../images/logo/logo-secundary.svg"
+        alt="Lendoo logo"
+      />
+    </header>
+
+    <nav class="sidebar">
+      <img
+        class="logo"
+        src="../images/logo/logo-secundary.svg"
+        alt="Lendoo logo"
+      />
+
+      <button type="button" class="close-btn" id="closeBtn">
+        <img src="../images/icon/close.svg" />
+      </button>
       <ul>
-        <li class="active">
+        <li>
           <a href="../pages/minha-estante.html"
             ><img src="../images/icon/estante.svg" alt="" />Minha Estante</a
           >
@@ -65,7 +84,9 @@
 
       <section class="books-grid">
         <article class="book-card">
-          <a href="../pages/livro.html"><img src="" alt="Capa do livro" /></a>
+          <a href="../pages/livro.html">
+            <img src="" alt="Capa do livro" />
+          </a>
           <h2 class="book-title"></h2>
           <p class="author"></p>
           <span class="status"></span>

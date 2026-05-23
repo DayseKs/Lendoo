@@ -6,14 +6,24 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.mobile-header {
+  display: none;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 79px 35px;
+  padding: 45px 35px;
   background: var(--primary-color);
   gap: 50px;
   min-height: 100vh;
+}
+.sidebar .menu-burguer {
+  display: none;
+}
+.sidebar .close-btn {
+  display: none;
 }
 .sidebar ul {
   display: flex;
@@ -24,6 +34,7 @@ body::-webkit-scrollbar {
   padding: 10px 35px;
   margin: 0 -35px;
   transition: 0.4s;
+  border: 2px solid transparent;
 }
 .sidebar ul li a {
   display: flex;
@@ -31,6 +42,7 @@ body::-webkit-scrollbar {
   gap: 12px;
   color: var(--nav-link--color);
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
 }
 .sidebar ul li.active {
@@ -58,6 +70,10 @@ body::-webkit-scrollbar {
   padding: 15px 20px;
   border-radius: 10px;
 }
+.main-content .search-wrapper img {
+  width: 20px;
+  height: 20px;
+}
 .main-content .search-wrapper input {
   border: none;
   width: 100%;
@@ -69,7 +85,9 @@ body::-webkit-scrollbar {
 .main-content .books-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 42px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
   overflow-y: auto;
   height: calc(100vh - 200px);
   align-items: start;
@@ -90,4 +108,91 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 223px;
   object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  body {
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    background-color: var(--primary-color);
+  }
+  .mobile-header .menu-burguer {
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-header .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    width: 70%;
+    transition: 0.3s;
+    align-items: flex-start;
+    width: 25vh;
+    height: 109vh;
+    padding: 45px 20px;
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .sidebar .logo {
+    display: none;
+  }
+  .sidebar.open .close-btn {
+    display: flex;
+    background: none;
+    border: none;
+    align-self: center;
+  }
+  .sidebar.open ul li a img {
+    width: 30px;
+    height: 30px;
+  }
+  .sidebar.open ul li:hover {
+    background-color: transparent;
+  }
+
+  .main-content {
+    padding: 20px 15px;
+    gap: 20px;
+    flex: 1; /* ocupa o espaço restante após o header */
+    overflow: hidden;
+  }
+  .main-content .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .main-content .books-grid .book-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--w);
+    gap: 15px;
+    max-width: 100%;
+  }
+  .main-content .books-grid .book-card img {
+    width: 149px;
+    height: 151px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+  .main-content .books-grid .book-card .book-title,
+  .main-content .books-grid .book-card .author,
+  .main-content .books-grid .book-card .status {
+    font-size: 13px;
+  }
 }
