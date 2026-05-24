@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const db = require("./database/db");
+const db = require("./public/database/db");
 
 const app = express();
 app.use(express.json());
